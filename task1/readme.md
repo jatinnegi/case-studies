@@ -66,7 +66,7 @@ create table time_slots (
 );
 ```
 
-Time slots table table contains startTime and endTime columns of data type **time** to represent the start and end time of an appointment. The **(timeSlotId)** primary key uniquely identifies a time slot.
+Time slots table contains startTime and endTime columns of data type **time** to represent the start and end time of an appointment. The **(timeSlotId)** primary key uniquely identifies a time slot.
 
 **5. DoctorsClinics Table**
 
@@ -80,7 +80,7 @@ create table doctors_clinics (
 );
 ```
 
-doctors_clinics table describes a relationship between a doctor and clinic. In this case it is a many to many relationship since 1 doctor can work in multiple clinics and 1 clinic can have multiple doctors working there. The primary key here is the **composite** of **doctorId** and **clinicId** so we only have one row for each combination of doctor and clinic.
+doctors_clinics table describes a relationship between a doctor and clinic. In this case it is a many to many relationship since one doctor can work in multiple clinics and one clinic can have multiple doctors working there. The primary key here is the **composite** of **doctorId** and **clinicId** so we only have one row for each combination of doctor and clinic.
 
 **6. Appointments Table**
 
