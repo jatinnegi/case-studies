@@ -1,5 +1,9 @@
 # Get prime numbers between a range
 
+## Live Demo
+
+https://majestic-crumble-bd191c.netlify.app/
+
 ```js
 function isNumPrime(num) {
   if (num <= 1) return false;
