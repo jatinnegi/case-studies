@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Number Finder</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prime Numbers</h1>
+      <form class="form">
+        <div class="form-control">
+          <label for="start-range">Start: </label>
+          <input type="number" id="start-range" />
+        </div>
+        <div class="form-control">
+          <label for="end-range">End: </label>
+          <input type="number" id="end-range" />
+        </div>
+        <button type="button" class="btn" onclick="handleSubmit()">Find</button>
+      </form>
+      <div id="detail" class="detail">
+        <ul>
+          <li>
+            Time taken to run all instances of `getPrimesInRange`:
+            <span id="total-time-taken"></span>
+          </li>
+          <li>
+            Average time for a single number check:
+            <span id="average-time-taken"></span>
+          </li>
+        </ul>
+        <button id="detail-btn" class="btn">Detail</button>
+      </div>
+    </div>
+    <div id="popup-container" class="popup-container">
+      <div class="popup">
+        <div>
+          <h4>Time taken for a single number check</h4>
+          <table id="table-1" class="table">
+            <tr>
+              <td>Number</td>
+              <td>Result</td>
+              <td>Time (ms)</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h4>Time taken for each prime number found</h4>
+          <table id="table-2" class="table">
+            <tr>
+              <td>Number</td>
+              <td>Result</td>
+              <td>Time (ms)</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
